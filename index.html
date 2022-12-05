@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- java script link  -->
+    <script src="javascript/main.js" defer></script>
+
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <style>
+        .bg-primary {
+            background-color: #811538 !important;
+            color: white;
+        }
+
+        .bg-secondery {
+            background-color: #5b0d25;
+            color: white;
+        }
+
+        .card {
+            /* border: none; */
+            margin-bottom: 25px;
+        }
+    </style>
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+    <!-- axios library -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <!-- header (start) -->
+    <div id="header" class="bg-primary">
+        <div id="header-background">
+            <div id="header-title" class="p-5">
+                <h1>كأس</h1>
+                <h1>العالم</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="logo">
+        <img src="images/logo.png" alt="">
+    </div>
+
+    <div id="qatar-word" class="d-flex justify-content-center">
+        <img src="images/qatar-word.png" alt="">
+    </div>
+    <!-- header (end) -->
+
+    <!-- standing (start)  -->
+    <div id="content" class="container mt-5 p-5">
+        <!-- title  -->
+        <div id="standing-title" class="row">
+            <h1>المجموعات</h1>
+            <hr>
+        </div>
+
+        <!-- Groups -->
+        <div id="standing-groups" class="row">
+
+            <!-- Group A-->
+            <div class="col-sm-6">
+                <div class="card shadow">
+                    <div class="card-header text-center bg-primary">
+                        <b>Group (A)</b>
+                    </div>
+                    <div class="row bg-secondery m-0">
+                        <div class="col-sm-4 text-center">Team</div>
+                        <div class="col-sm-2 text-center">W</div>
+                        <div class="col-sm-2 text-center">D</div>
+                        <div class="col-sm-2 text-center">L</div>
+                        <div class="col-sm-2 text-center">PTS</div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Group -->
+
+            <!-- Group B-->
+            <div class="col-sm-6">
+                <div class="card shadow">
+                    <div class="card-header text-center bg-primary">
+                        <b>Group (A)</b>
+                    </div>
+                    <div class="row bg-secondery m-0">
+                        <div class="col-sm-4 text-center">Team</div>
+                        <div class="col-sm-2 text-center">W</div>
+                        <div class="col-sm-2 text-center">D</div>
+                        <div class="col-sm-2 text-center">L</div>
+                        <div class="col-sm-2 text-center">PTS</div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Group -->
+
+            <!-- Group C-->
+            <div class="col-sm-6">
+                <div class="card shadow">
+                    <div class="card-header text-center bg-primary">
+                        <b>Group (A)</b>
+                    </div>
+                    <div class="row bg-secondery m-0">
+                        <div class="col-sm-4 text-center">Team</div>
+                        <div class="col-sm-2 text-center">W</div>
+                        <div class="col-sm-2 text-center">D</div>
+                        <div class="col-sm-2 text-center">L</div>
+                        <div class="col-sm-2 text-center">PTS</div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Group -->
+
+            <!-- Group D-->
+            <div class="col-sm-6">
+                <div class="card shadow">
+                    <div class="card-header text-center bg-primary">
+                        <b>Group (A)</b>
+                    </div>
+                    <div class="row bg-secondery m-0">
+                        <div class="col-sm-4 text-center">Team</div>
+                        <div class="col-sm-2 text-center">W</div>
+                        <div class="col-sm-2 text-center">D</div>
+                        <div class="col-sm-2 text-center">L</div>
+                        <div class="col-sm-2 text-center">PTS</div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Group -->
+
+            <!-- Group E-->
+            <div class="col-sm-6">
+                <div class="card shadow">
+                    <div class="card-header text-center bg-primary">
+                        <b>Group (A)</b>
+                    </div>
+                    <div class="row bg-secondery m-0">
+                        <div class="col-sm-4 text-center">Team</div>
+                        <div class="col-sm-2 text-center">W</div>
+                        <div class="col-sm-2 text-center">D</div>
+                        <div class="col-sm-2 text-center">L</div>
+                        <div class="col-sm-2 text-center">PTS</div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Group -->
+
+            <!-- Group F-->
+            <div class="col-sm-6">
+                <div class="card shadow">
+                    <div class="card-header text-center bg-primary">
+                        <b>Group (A)</b>
+                    </div>
+                    <div class="row bg-secondery m-0">
+                        <div class="col-sm-4 text-center">Team</div>
+                        <div class="col-sm-2 text-center">W</div>
+                        <div class="col-sm-2 text-center">D</div>
+                        <div class="col-sm-2 text-center">L</div>
+                        <div class="col-sm-2 text-center">PTS</div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Group G-->
+
+            <!-- Group H-->
+            <div class="col-sm-6">
+                <div class="card shadow">
+                    <div class="card-header text-center bg-primary">
+                        <b>Group (A)</b>
+                    </div>
+                    <div class="row bg-secondery m-0">
+                        <div class="col-sm-4 text-center">Team</div>
+                        <div class="col-sm-2 text-center">W</div>
+                        <div class="col-sm-2 text-center">D</div>
+                        <div class="col-sm-2 text-center">L</div>
+                        <div class="col-sm-2 text-center">PTS</div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--|| Group ||-->
+
+            <!-- Group -->
+            <div class="col-sm-6">
+                <div class="card shadow">
+                    <div class="card-header text-center bg-primary">
+                        <b>Group (A)</b>
+                    </div>
+                    <div class="row bg-secondery m-0">
+                        <div class="col-sm-4 text-center">Team</div>
+                        <div class="col-sm-2 text-center">W</div>
+                        <div class="col-sm-2 text-center">D</div>
+                        <div class="col-sm-2 text-center">L</div>
+                        <div class="col-sm-2 text-center">PTS</div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <div class="row m-0">
+                                <div class="col-sm-4 text-center d-flex justify-content-center align-items-center">
+                                    <span id="flag"><img src="images/team.png" alt="" class="rounded-circle"
+                                            style="width: 35px; margin:5px;"></span>
+                                    <h5 style="margin: auto 0 auto 5px;">PAL</h5>
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">2
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">0
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">1
+                                </div>
+                                <div class="col-sm-2 text-center d-flex justify-content-center align-items-center">
+                                    <b>6</b></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- || Group || -->
+
+        </div>
+
+
+        <!-- MATCHES -->
+        <div id="matches " class="mt-5">
+            <div class="row" style="margin:0px; display: flex; justify-content: center;">
+                <h1 style="direction: rtl;">
+                    <b>المباريات</b>
+                </h1>
+                <hr>
+
+                <div class="row mb-5" id="matches-list">
+
+                    <!-- MATCH COL -->
+                    <div class="col-lg-12" >
+
+                        <div class="card shadow rounded-pill mt-5" style="overflow: hidden">
+                            
+                            <!-- MATCH CARD -->
+                            <div class="card-body p-0">
+                                <div class="row">
+
+                                    <!-- FIRST TEAM COL -->
+                                    <div class="col-lg-3 bg-primary d-flex flex-direction-column justify-content-center align-items-center" style="border-right: solid 5px #5b0d25;">
+                                        <div class="d-flex align-items-center justify-content-center" style="text-align: center; margin: auto 0">
+                                        
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+                                                        class="rounded-circle border border-2" 
+                                                        src="images/team.png" 
+                                                        alt=""
+                                                        style="width: 40px; height: 40px"
+                                                    >
+                                                </div>
+                                                <h5 style="margin:auto 4px">KSA</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// FIRST TEAM COL //-->
+
+                                    <!-- VERSUS COL -->
+                                    <div class="col-lg-6" style="text-align: center">
+                                        <div class="row">
+                                            <div class="col-sm-4" style="display: flex; justify-content: center; align-items: center;">
+                                                <h1>-</h1>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <h6>group (A)</h6>
+                                                <h1>X</h1>                                        
+                                                <h6>18:30</h6>
+                                            </div>
+                                            <div class="col-sm-4" style="display: flex; justify-content: center; align-items: center;">
+                                                <h1>-</h1>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!--// VERSUS COL //-->
+
+
+                                    <!-- SECOND TEAM COL -->
+                                    <div class="col-lg-3 bg-primary d-flex flex-direction-column justify-content-center align-items-center" style="border-left: solid 5px #5b0d25;">
+                                        <div class="d-flex align-items-center justify-content-center" style="text-align: center; margin: auto 0">
+                                        
+                                            <div>
+                                                <div class="flag">
+                                                    <img 
+                                                        class="rounded-circle border border-2" 
+                                                        src="images/team.png" 
+                                                        alt=""
+                                                        style="width: 40px; height: 40px"
+                                                    >
+                                                </div>
+                                                <h5 style="margin:auto 4px">KSA</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// SECOND TEAM COL //-->
+                                </div>
+                            </div>
+                            <!--// MATCH CARD //-->
+
+                            
+                        </div>
+
+                        
+                    </div>
+                    <!--// MATCH COL //-->
+
+                    
+    
+                </div>
+            </div>
+        </div>
+        <!--// MATCHES //-->
+
+    </div>
+
+    <!-- standing (end)  -->
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><b style="font-size: 24px;">^</b></button>
+
+</body>
+</html>
